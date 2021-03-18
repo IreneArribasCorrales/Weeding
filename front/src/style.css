@@ -1,0 +1,107 @@
+html {
+  background-color: #2e4058;
+}
+
+body {
+  background-color: #2e4058;
+}
+
+.navbar {
+  background-color: #2e4058;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.navbar-item {
+  color: white;
+  background-color: #2e4058;
+}
+.block {
+  margin: 0px;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.color-light {
+  color: white !important;
+}
+.control {
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding-bottom: 7px;
+}
+.control :hover {
+  color: antiquewhite;
+}
+.color {
+  color: white;
+}
+.img-welcome {
+  padding-bottom: 60px;
+}
+.img-map {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 516px;
+}
+a.navbar-item:hover {
+  background-color: #212f41;
+}
+
+.img-navbar {
+  height: auto;
+  width: 70px;
+}
+.img-asist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button :hover {
+  color: black;
+}
+#map {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 367.48px;
+  width: 516px;
+}
+#mapa {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 367.48px;
+  width: 516px;
+}
+
+.container-img {
+  display: flex;
+  justify-content: space-around;
+}
+figcaption {
+  color: white;
+}
+.img-kercus {
+  height: 325.48px;
+}
+.img-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+a :hover {
+  color: antiquewhite;
+}
+.personalize {
+  background-color: #8bcdb0;
+  border-color: #8bcdb0;
+  color: white;
+}
+.hover-color :hover {
+  color: black !important;
+}

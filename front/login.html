@@ -10,10 +10,51 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://use.fontawesome.com/ab25090252.js"></script>
+    <script type="text/javascript" src="../front/logic/login.js"></script>
   </head>
 
   <body>
     <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img class="img-navbar" src="src/img/I&B.png">
+          </a>
+  
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+  
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="home.html"  class="navbar-item">
+              Bienvenidos
+            </a>
+  
+            <a href="mapa.html" class="navbar-item">
+              Mapa
+            </a>
+  
+            <a href="contacto.html" class="navbar-item">
+              Contáctanos
+            </a>
+  
+          </div>
+  
+          </div>
+  
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="registro.html" class="button personalize">Registrate</a>
+                <a href="login.html" class="button is-light">Entrar</a>
+              </div>
+            </div>
+          </div>
+        </div>
     <div>
       <img class="img-asist" src="src/img/block.png"></img>
     </div>
@@ -29,9 +70,9 @@
                   <label class="label">Email</label>
                   <div class="control hover-color has-icons-left">
                     <input
-                      id= "login-mail"
-                      type="email"
-                      placeholder="e.g. bobsmith@gmail.com"
+                      id= "mail"
+                      type="mail"
+                      placeholder="Introduce tu email"
                       class="input"
                       required
                     />
@@ -44,7 +85,7 @@
                   <label  class="label">Contraseña</label>
                   <div class="control hover-color has-icons-left">
                     <input
-                      id= "login-password"
+                      id= "password"
                       type="password"
                       placeholder="*******"
                       class="input"
@@ -54,12 +95,6 @@
                       <i class="fa fa-lock"></i>
                     </span>
                   </div>
-                </div>
-                <div class="field">
-                  <label for="" class="checkbox">
-                    <input type="checkbox" />
-                    Recuerdame
-                  </label>
                 </div>
                 <div class="field">
                   <button type="submit" class="button is-success">Entrar</button>
@@ -73,10 +108,5 @@
       <img class="img-asist" src="src/img/block.png"></img>
     </div>
   </div>
-
-
-
-
-<script src="/back/main.js"></script>
   </body>
 </html>

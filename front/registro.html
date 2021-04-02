@@ -8,10 +8,51 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
   <link rel="stylesheet" href="src/style.css" />
   <script src="https://use.fontawesome.com/ab25090252.js"></script>
+  <script type="text/javascript" src="../front/logic/auth.js"></script>
 </head>
 
 <body>
   <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img class="img-navbar" src="src/img/I&B.png">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="home.html"  class="navbar-item">
+            Bienvenidos
+          </a>
+
+          <a href="mapa.html" class="navbar-item">
+            Mapa
+          </a>
+
+          <a href="contacto.html" class="navbar-item">
+            Contáctanos
+          </a>
+
+        </div>
+
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="registro.html" class="button personalize">Registrate</a>
+              <a href="login.html" class="button is-light">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     <div>
       <img class="img-asist" src="src/img/block.png"></img>
     </div>
@@ -22,47 +63,46 @@
       </div>
       <div class="columns is-centered">
         <div class="column is-5-tablet is-4-desktop is-3-widescreen">
-          <form id="signup-form" action="" class="box">
+          <form id="signup-form" class="box">
             <h2 class="title is-2 text-center"><strong>Registro</strong></h2>
             <div class="field">
-              <label for="" class="label">Nombre</label>
+              <label for="name" class="label">Nombre</label>
               <div class="control hover-color has-icons-left">
-                <input type="name" id="signup-name" placeholder="Ana" class="input" required />
+                <input type="name" id="name" placeholder="Ana" class="input" required />
                 <span class="icon is-small is-left">
                   <i class="fa fa-user"></i>
                 </span>
               </div>
             </div>
             <div class="field">
-              <label for="" class="label">Apellidos</label>
+              <label for="mail" class="label">Email</label>
               <div class="control hover-color has-icons-left">
-                <input type="surmane" id="signup-surname" placeholder="González" class="input" required />
-                <span class="icon is-small is-left">
-                  <i class="fa fa-user"></i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-              <label for="" class="label">Email</label>
-              <div class="control hover-color has-icons-left">
-                <input id="signup-mail" type="email" placeholder="ana@gmail.com" class="input" required />
+                <input id="mail" type="email" placeholder="Introduce tu email" class="input" required />
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
               </div>
             </div>
             <div class="field">
-              <label  class="label">Contraseña</label>
+              <label for="password" class="label">Contraseña</label>
               <div class="control hover-color has-icons-left">
-                <input id="signup-password" type="password" placeholder="*******" class="input" required />
+                <input id="password" type="password" placeholder="*******" class="input" required />
                 <span class="icon is-small is-left">
                   <i class="fa fa-lock"></i>
                 </span>
               </div>
             </div>
+            <div class="field">
+              <label class="radio assistance"><strong>¿Vas a asistir?</strong></label>
+              <div>
+                <input value="1" type= "radio" name="assistance"><strong>  Sí</strong>  
+                <input value="2" type= "radio" name="assistance"><strong>  No</strong>  
+              </div>
+              
+            </div>
             
             <div class="field">
-              <button type="submit"class="button is-success">Entrar</button>
+              <button type="submit"class="button is-success">Enviar</button>
             </div>
           </form>
         </div>
@@ -74,7 +114,6 @@
       </div>
     </div>
   
-    <script src="/back/main.js"></script>
 </body>
 
 </html>

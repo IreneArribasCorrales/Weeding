@@ -105,3 +105,6 @@ a :hover {
 .hover-color :hover {
   color: black !important;
 }
+.assistance {
+  padding-bottom: 10px;
+}
